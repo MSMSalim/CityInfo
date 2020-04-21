@@ -1,11 +1,6 @@
 ﻿<Properties StartupConfiguration="{EB2305F6-73B5-4899-90A4-4D1DE15BF3D1}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Startup.cs">
     <Files>
-      <File FileName="CityInfo.API/Controllers/CitiesController.cs" Line="21" Column="35" />
-      <File FileName="CityInfo.API/Models/CityDto.cs" Line="20" Column="29" />
-      <File FileName="CityInfo.API/CitiesDataStore.cs" Line="41" Column="46" />
-      <File FileName="CityInfo.API/Models/PointOfInterestDto.cs" Line="13" Column="1" />
-      <File FileName="CityInfo.API/Controllers/PointsIOfInterestController.cs" Line="17" Column="19" />
       <File FileName="CityInfo.API/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
