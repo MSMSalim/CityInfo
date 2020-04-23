@@ -17,3 +17,22 @@
 2020-04-23 14:19:19.6207|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-04-23 14:19:19.6246|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-04-23 14:19:19.6281|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 15:27:07.6243|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+2020-04-23 16:53:07.1309|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] ON;
+INSERT INTO [PointOfInterests] ([Id], [CityId], [Description], [Name])
+VALUES (1, 0, N'The most visited urban park in the United States.', N'Central Park'),
+(2, 0, N'A 102-story skyscraper located in Midtown Manhattan.', N'Empire State Building'),
+(3, 0, N'A Gothic style cathedral, conceived by architects Jan and Pieter Appelmans.', N'Cathedral of Our Lady'),
+(4, 0, N'The the finest example of railway architecture in Belgium.', N'Antwerp Central Station'),
+(5, 0, N'A wrought iron lattice tower on the Champ de Mars, named after engineer Gustave Eiffel.', N'Eiffel Tower'),
+(6, 0, N'The world''s largest museum.', N'The Louvre');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
+    SET IDENTITY_INSERT [PointOfInterests] OFF;

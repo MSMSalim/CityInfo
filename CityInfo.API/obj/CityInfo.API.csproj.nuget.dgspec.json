@@ -14,7 +14,7 @@
         "outputPath": "/Users/salim.belim/Projects/CityInfo/CityInfo.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/salim.belim/.config/NuGet/NuGet.Config"
+          "/Users/salim.belim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -68,9 +68,19 @@
               "target": "Package",
               "version": "[3.1.3, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -79,6 +89,12 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.9.2, )"
+            },
+            "NuGet.CommandLine": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
