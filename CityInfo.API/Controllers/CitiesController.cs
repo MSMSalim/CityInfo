@@ -69,6 +69,7 @@ namespace CityInfo.API.Controllers
 
             if (includePointsOfInterest)
             {
+                /*
                 var cityResult = new CityDto()
                 {
                     Id = cityEntity.Id,
@@ -86,8 +87,12 @@ namespace CityInfo.API.Controllers
                                 Description = poi.Description
                             });
                 }
+                
 
                 return Ok(cityResult);
+                */
+
+                return Ok(_mapper.Map<CityDto>(cityEntity));
             }
 
             /*
