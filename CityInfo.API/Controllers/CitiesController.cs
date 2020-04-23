@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using CityInfo.API.Entities;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
@@ -13,10 +14,13 @@ namespace CityInfo.API.Controllers
     public class CitiesController : ControllerBase
     {
         private readonly ICityInfoRepository _cityInfoRepository;
+        private readonly IMapper _mapper;
 
-        public CitiesController(ICityInfoRepository cityInfoRepository)
+        public CitiesController(ICityInfoRepository cityInfoRepository,
+            IMapper mapper)
         {
             this._cityInfoRepository = cityInfoRepository;
+            this._mapper = mapper;
         }
 
         public IActionResult GetCities()
@@ -25,6 +29,7 @@ namespace CityInfo.API.Controllers
 
             var cityEntities = _cityInfoRepository.GetCities();
 
+            /*
             var results = new List<CityDtoWithoutPointsOfInterestDto>();
             foreach(City cityEntity in cityEntities)
             {
@@ -35,8 +40,9 @@ namespace CityInfo.API.Controllers
                     Name = cityEntity.Name
                 });
             }
+            */
 
-            return Ok(results);
+            return Ok(_mapper.Map<IEnumerable<CityDtoWithoutPointsOfInterestDto>>(cityEntities));
         }
 
         [HttpGet("{id}")]
@@ -84,6 +90,7 @@ namespace CityInfo.API.Controllers
                 return Ok(cityResult);
             }
 
+            /*
             var cityWithoutPointOfInterestResult =
                 new CityDtoWithoutPointsOfInterestDto()
                 {
@@ -93,6 +100,9 @@ namespace CityInfo.API.Controllers
                 };
 
             return Ok(cityWithoutPointOfInterestResult);
+            */
+
+            return Ok(_mapper.Map<IEnumerable<CityDtoWithoutPointsOfInterestDto>>(cityEntity));
         }
     }
 }

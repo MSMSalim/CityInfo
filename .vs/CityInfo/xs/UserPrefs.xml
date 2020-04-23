@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{EB2305F6-73B5-4899-90A4-4D1DE15BF3D1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Controllers/PointsOfInterestController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Profiles/PointOfInterestProfile.cs">
     <Files>
-      <File FileName="CityInfo.API/Services/CityInfoRepository.cs" Line="11" Column="6" />
-      <File FileName="CityInfo.API/Startup.cs" Line="25" Column="18" />
-      <File FileName="CityInfo.API/Controllers/CitiesController.cs" Line="93" Column="19" />
+      <File FileName="CityInfo.API/Startup.cs" Line="38" Column="1" />
+      <File FileName="CityInfo.API/Controllers/CitiesController.cs" Line="95" Column="61" />
       <File FileName="CityInfo.API/Models/CityDtoWithoutPointsOfInterestDto.cs" Line="11" Column="1" />
       <File FileName="CityInfo.API/Controllers/PointsOfInterestController.cs" Line="8" Column="9" />
+      <File FileName="CityInfo.API/Profiles/CityProfile.cs" Line="11" Column="50" />
+      <File FileName="CityInfo.API/Profiles/PointOfInterestProfile.cs" Line="10" Column="22" />
+      <File FileName="CityInfo.API/Entities/City.cs" Line="21" Column="43" />
+      <File FileName="CityInfo.API/Models/CityDto.cs" Line="6" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +16,12 @@
           <Node name="CityInfo" expanded="True">
             <Node name="CityInfo.API" expanded="True">
               <Node name="Context" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="PointsOfInterestController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Entities" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Profiles" expanded="True">
+                <Node name="PointOfInterestProfile.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
             </Node>
           </Node>

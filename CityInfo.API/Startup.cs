@@ -1,3 +1,5 @@
+using System;
+using AutoMapper;
 using CityInfo.API.Context;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Builder;
@@ -41,6 +43,10 @@ namespace CityInfo.API
             {
                 o.UseSqlServer(connectionString);
             });
+
+            // Add automapper
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
           }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

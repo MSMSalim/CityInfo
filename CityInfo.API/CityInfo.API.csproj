@@ -25,6 +25,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -33,5 +35,6 @@
     <Folder Include="Services\" />
     <Folder Include="Entities\" />
     <Folder Include="Context\" />
+    <Folder Include="Profiles\" />
   </ItemGroup>
 </Project>
