@@ -1,0 +1,15 @@
+2020-04-23 12:07:08.5096|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 12:07:08.5714|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 12:07:08.5759|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 12:07:08.5796|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 12:09:10.9633|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 12:09:11.0770|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 12:09:11.0811|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 12:09:11.0847|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 12:09:30.8491|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2020-04-23 12:13:53.5523|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 12:13:53.6045|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 12:13:53.6078|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 12:13:53.6114|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 12:14:07.1620|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2020-04-23 12:14:16.8419|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.

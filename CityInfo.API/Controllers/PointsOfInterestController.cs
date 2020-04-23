@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using CityInfo.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.Extensions.Logging;
+using CityInfo.API.Services;
 
 namespace CityInfo.API.Controllers
 {
@@ -12,6 +14,16 @@ namespace CityInfo.API.Controllers
     [Route("api/cities/{cityId}/pointsofinterest")]
     public class PointsOfInterestController : ControllerBase
     {
+        private readonly ILogger<PointsOfInterestController> _logger;
+        private readonly IMailService _localMailService;
+
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger,
+            IMailService localMailService)
+        {
+            this._logger = logger;
+            this._localMailService = localMailService;
+        }
+
         [HttpGet("{id}", Name = "GetPointOfInterest")]
         public IActionResult GetPointsOfInterest(int cityId, int id)
         {
@@ -20,6 +32,8 @@ namespace CityInfo.API.Controllers
 
             if (city == null)
             {
+                _logger.LogInformation($"City with id {cityId} wasn't found when accessing points of interest.");
+
                 return NotFound();
             }
 
@@ -145,8 +159,48 @@ namespace CityInfo.API.Controllers
             patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
 
 
+            if (pointOfInterestToPatch.Name == pointOfInterestToPatch.Description)
+            {
+                ModelState.AddModelError("Description",
+                    "The provided description should be different from the name.");
+            }
+
+            if (!TryValidateModel(pointOfInterestToPatch))
+            {
+                return BadRequest(ModelState);
+            }
+
             pointOfInterestFromStore.Name = pointOfInterestToPatch.Name;
             pointOfInterestFromStore.Description = pointOfInterestToPatch.Description;
+
+            return NoContent();
+
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletePointOfInterest(int cityId, int id)
+        {
+
+            var city = CitiesDataStore.Current.Cities
+                       .FirstOrDefault(x => x.Id == cityId);
+
+            if(city == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestFromStore = city.PointsOfInterest
+                .FirstOrDefault(x => x.Id == id);
+
+            if(pointOfInterestFromStore == null)
+            {
+                return NotFound();
+            }
+
+            city.PointsOfInterest.Remove(pointOfInterestFromStore);
+
+            _localMailService.Send("Point of interest deleted.",
+                $"Point of interest {pointOfInterestFromStore.Name} with id {pointOfInterestFromStore.Id} has been deleted");
 
             return NoContent();
 

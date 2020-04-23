@@ -1,3 +1,4 @@
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Formatters;
@@ -12,7 +13,6 @@ namespace CityInfo.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-
             services
                 .AddMvc((Microsoft.AspNetCore.Mvc.MvcOptions options) =>
                 {
@@ -24,6 +24,13 @@ namespace CityInfo.API
                     o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 })
                 .AddNewtonsoftJson();
+
+            //Register for DI
+            //Transient for Lightweight stateless service
+            services.AddTransient<IMailService, LocalMailService>();
+
+            // Scoped are created once for each request
+            // Singleton first time it's requested and subsequent service uses that instance
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
