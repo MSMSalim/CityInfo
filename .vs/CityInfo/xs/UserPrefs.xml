@@ -1,24 +1,25 @@
 ﻿<Properties StartupConfiguration="{EB2305F6-73B5-4899-90A4-4D1DE15BF3D1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Controllers/PointsOfInterestController.cs">
     <Files>
-      <File FileName="CityInfo.API/Startup.cs" Line="1" Column="1" />
+      <File FileName="CityInfo.API/Startup.cs" Line="28" Column="1" />
+      <File FileName="CityInfo.API/Models/PointOfInterestForCreationDto.cs" />
+      <File FileName="CityInfo.API/Controllers/PointsOfInterestController.cs" Line="145" Column="13" />
+      <File FileName="CityInfo.API/Models/PointOfInterestForUpdateDto.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CityInfo" expanded="True">
             <Node name="CityInfo.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PointsOfInterestController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

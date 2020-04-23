@@ -22,7 +22,8 @@ namespace CityInfo.API
                 .AddMvcOptions(o =>
                 {
                     o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
-                });
+                })
+                .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

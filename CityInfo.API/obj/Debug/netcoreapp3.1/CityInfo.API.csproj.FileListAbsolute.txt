@@ -105,3 +105,7 @@
 /Users/salim.belim/Projects/CityInfo/CityInfo.API/obj/Debug/netcoreapp3.1/CityInfo.API.dll
 /Users/salim.belim/Projects/CityInfo/CityInfo.API/obj/Debug/netcoreapp3.1/CityInfo.API.pdb
 /Users/salim.belim/Projects/CityInfo/CityInfo.API/obj/Debug/netcoreapp3.1/CityInfo.API.genruntimeconfig.cache
+/Users/salim.belim/Projects/CityInfo/CityInfo.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/salim.belim/Projects/CityInfo/CityInfo.API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/salim.belim/Projects/CityInfo/CityInfo.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/salim.belim/Projects/CityInfo/CityInfo.API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
