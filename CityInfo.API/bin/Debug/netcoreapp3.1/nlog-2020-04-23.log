@@ -36,3 +36,35 @@ VALUES (1, 0, N'The most visited urban park in the United States.', N'Central Pa
 (6, 0, N'The world''s largest museum.', N'The Louvre');
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'CityId', N'Description', N'Name') AND [object_id] = OBJECT_ID(N'[PointOfInterests]'))
     SET IDENTITY_INSERT [PointOfInterests] OFF;
+2020-04-23 18:37:15.4618|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:37:15.5520|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:37:15.5573|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:37:15.5618|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:39:15.8068|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:39:15.8674|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:39:15.8710|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:39:15.8745|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:39:54.2614|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:39:54.3455|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:39:54.3493|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:39:54.3536|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:40:34.4619|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:40:34.5472|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:40:34.5533|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:40:34.5566|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:41:20.7441|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:41:20.8586|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:41:20.8619|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:41:20.8649|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:43:29.6788|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:43:29.7463|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:43:29.7544|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:43:29.7586|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 18:51:37.8365|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 18:51:37.9278|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 18:51:37.9321|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 18:51:37.9360|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API
+2020-04-23 19:10:30.3494|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:1028
+2020-04-23 19:10:30.4354|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-04-23 19:10:30.4389|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-04-23 19:10:30.4428|INFO|Microsoft.Hosting.Lifetime|Content root path: /Users/salim.belim/Projects/CityInfo/CityInfo.API

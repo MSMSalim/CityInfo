@@ -32,7 +32,7 @@ namespace CityInfo.API
             // Scoped are created once for each request
             // Singleton first time it's requested and subsequent service uses that instance
             services.AddTransient<IMailService, LocalMailService>();
-
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 
             // Register Dbcontext for entityframework
             // Below will register as scoped lifetime

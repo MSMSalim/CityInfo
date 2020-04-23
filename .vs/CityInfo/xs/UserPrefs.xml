@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{EB2305F6-73B5-4899-90A4-4D1DE15BF3D1}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Controllers/PointsOfInterestController.cs">
     <Files>
-      <File FileName="CityInfo.API/Startup.cs" Line="28" Column="1" />
-      <File FileName="CityInfo.API/Models/PointOfInterestForCreationDto.cs" />
-      <File FileName="CityInfo.API/Controllers/PointsOfInterestController.cs" Line="145" Column="13" />
-      <File FileName="CityInfo.API/Models/PointOfInterestForUpdateDto.cs" />
+      <File FileName="CityInfo.API/Services/CityInfoRepository.cs" Line="11" Column="6" />
+      <File FileName="CityInfo.API/Startup.cs" Line="25" Column="18" />
+      <File FileName="CityInfo.API/Controllers/CitiesController.cs" Line="93" Column="19" />
+      <File FileName="CityInfo.API/Models/CityDtoWithoutPointsOfInterestDto.cs" Line="11" Column="1" />
+      <File FileName="CityInfo.API/Controllers/PointsOfInterestController.cs" Line="8" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CityInfo" expanded="True">
             <Node name="CityInfo.API" expanded="True">
+              <Node name="Context" expanded="True" />
               <Node name="Controllers" expanded="True">
                 <Node name="PointsOfInterestController.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
